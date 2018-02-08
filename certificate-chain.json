@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/certificate-chain.json",
     "title": "Certificate Chain",
     "description": "This is the Certificate Chain schema... TODO.",

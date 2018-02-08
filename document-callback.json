@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/document-callback.json",
     "title": "Document Callback",
     "description": "This is the Document Callback schema... TODO.",

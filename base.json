@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/base.json",
     "title": "Base",
     "description": "This is the Base schema for Brickchain documents. All Brickchain documents use this as its base, and includes most fields from the base document.",
