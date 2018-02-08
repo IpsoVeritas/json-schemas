@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://developer.brickchain.com/schemas/message.json",
+    "title": "Message",
+    "description": "This is the Mandate Token schema for Brickchain documents, see more at https://developer.brickchain.com/",
+    "type": "object",
+    "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
+    "properties": {
+        "title": {
+            "type": "string",
+            "description": "The message title"
+        },
+        "message": {
+            "type": "string",
+            "description": "The content of the message"
+        }
+    }
+}

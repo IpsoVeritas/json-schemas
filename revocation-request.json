@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://developer.brickchain.com/schemas/revocation-request.json",
+    "title": "Revocation Request",
+    "description": "This is the Brickchain Revocation Request schema. This document is sent to a Revocation service to request a Revocation of a document signature.",
+    "type": "object",
+    "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
+    "properties": {
+        "jws": {
+            "type": "object",
+            "description": "This is the original signed document to be revoked."
+        },
+        "revocationchecksum": {
+            "type": "object",
+            "description": "The is the Revocation Checksum document to be published as a revocation."
+        },
+        "priority": {
+            "type": "integer",
+            "description": "This is the priority of the Revocation Request, indicating the urgency of the Revocation to be published."
+        }
+    },
+    "required": [
+        "jws",
+        "revocationchecksum",
+        "priority"
+    ]
+}

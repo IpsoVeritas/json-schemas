@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://developer.brickchain.com/schemas/signature-request.json",
+    "title": "Signature Request",
+    "description": "This is the Signature Request schema. The purpose is to request a user to sign a document.",
+    "type": "object",
+    "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
+    "properties": {
+        "replyTo": {
+            "type": "array",
+            "item": {
+                "type": "string",
+                "format": "uri",
+                "description": "A callback address of where to send a response."
+            },
+            "description": "A list of callback addresses of where to send a response."
+        },
+        "document": {
+            "type": "string",
+            "description": "The document requested for signing."
+        },
+        "keyLevel": {
+            "type": "integer",
+            "description": "TODO: The required key level"
+        }
+    },
+    "required": [
+        "replyTo",
+        "document"
+    ]
+}

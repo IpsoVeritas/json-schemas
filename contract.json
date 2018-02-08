@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://developer.brickchain.com/schemas/contract.json",
+    "title": "Contract",
+    "description": "This is the Contract schema for Brickchain documents, see more at https://developer.brickchain.com/",
+    "type": "object",
+    "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
+    "properties": {
+        "text": {
+            "type": "string",
+            "description": "A Contract message, displayed for the user for signing"
+        }
+    }
+}

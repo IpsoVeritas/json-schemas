@@ -1,0 +1,87 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://developer.brickchain.com/schemas/actiondescriptor.json",
+    "title": "Action Descriptor",
+    "description": "This is the Action Descriptor schema for Brickchain documents, see more at https://developer.brickchain.com/",
+    "type": "object",
+    "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
+    "properties": {
+        "binding": {
+            "type": "string",
+            "description": "The binding of the descriptor, the identifier of the realm"
+        },
+        "label": {
+            "type": "string",
+            "description": "The label of the action descriptor",
+            "examples": [ "Livingroom lights" ]
+        },
+        "roles": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "description": "A role that can use the action"
+            }
+        },
+        "uiURI": {
+            "type": "string",
+            "format": "uri",
+            "description": "Location of a web interface"
+        },
+        "uiData": {
+            "type": "string",
+            "description": "Inline HTML for a web interface"
+        },
+        "nonceType": {
+            "type": "string",
+            "description": "TODO"
+        },
+        "nonce": {
+            "nonce": "string",
+            "description": "The nonce to use (to protect replay attacks)"
+        },
+        "nonceURI": {
+            "type": "string",
+            "format": "uri",
+            "description": "Where to receive a new nonce (to protect replay attacks)"
+        },
+        "actionURI": {
+            "type": "string",
+            "format": "uri",
+            "description": "The URI where to perform the Action"
+        },
+        "params": {
+            "type": "object",
+            "properties": {
+                ".*": {
+                    "type": "string"
+                }
+            },
+            "description": "Additional parameters for the mandate, used by actions"
+        },
+        "scopes": {
+            "type": "object",
+            "description": "To be able to query for additional scopes when performing the Action"
+        },
+        "icon": {
+            "type": "string",
+            "description": "An icon to be used for displaying the Action Descriptor (png/jpg/svg)"
+        },
+        "keyLevel": {
+            "type": "integer",
+            "description": "The key level needed to perform the action"
+        },
+        "internal": {
+            "type": "boolean",
+            "description": "Do not display this descriptor in listings"
+        },
+        "contract": {
+            "type": "object",
+            "description": "The message to display when signing the Action"
+        }
+    },
+    "required": [
+        "label",
+        "roles",
+        "actionURI"
+    ]
+}

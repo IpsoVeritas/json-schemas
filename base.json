@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://developer.brickchain.com/schemas/base.json",
+    "title": "Base",
+    "description": "This is the Base schema for Brickchain documents. All Brickchain documents use this as its base, and includes most fields from the base document.",
+    "type": "object",
+    "properties": {
+        "@context": {
+            "type": "string",
+            "format": "uri",
+            "description": "URI to this schema document (see JSON-LD)"
+        },
+        "@type": {
+            "type": "string",
+            "description": "Document type (see JSON-LD)"
+        },
+        "@subtype": {
+            "type": "string",
+            "description": "Document sub type"
+        },
+        "@timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp of when the document was created"
+        },
+        "@id": {
+            "type": "string",
+            "description": "A unique identifier of the document (uuid)"
+        },
+        "@certificateChain": {
+            "type": "string",
+            "description": "The certificate chain that was used as proof of current signature"
+        },
+        "@realm": {
+            "type": "string",
+            "description": "The name of the realm that owns this document",
+            "format": "hostname"
+        }
+    },
+    "required": [
+        "@type",
+        "@timestamp"
+    ]
+}

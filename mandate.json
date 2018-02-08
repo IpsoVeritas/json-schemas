@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://developer.brickchain.com/schemas/mandate.json",
+    "title": "Mandate",
+    "description": "This is the Mandate schema for Brickchain documents, see more at https://developer.brickchain.com/",
+    "type": "object",
+    "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
+    "properties": {
+        "role": {
+            "type": "string",
+            "description": "The role for for mandate",
+            "examples": [ "admin@example.realm", "guest@example.realm", "9a751666-857e-4578-991f-a874e4488b59@example.com" ]
+        },
+        "label": {
+            "type": "string",
+            "description": "The human readable name for the mandate (the role)",
+            "examples": [ "Admin", "Guest", "Employee"]
+        },
+        "ttl": {
+            "type": "integer",
+            "description": "Seconds until expiration after the document was created (timestamp)"
+        },
+        "recipient": {
+            "type": "string",
+            "description": "Identifier of the receipient of the mandate",
+            "examples": [ "user@example.com", "Person Name"]
+        },
+        "recipientName": {
+            "type": "string",
+            "description": "Name of the receipient of the mandate",
+            "examples": [ "Person Name"]
+        },
+        "recipientPublicKey": {
+            "type": "object",
+            "description": "The public JWK of the recipient of the fact"
+        },
+        "requestId": {
+            "type": "string",
+            "description": "The id of the mandate request"
+        },
+        "sender": {
+            "type": "string",
+            "description": "The id of the sender of the invite"
+        },
+        "params": {
+            "type": "object",
+            "properties": {
+                ".*": {
+                    "type": "string"
+                }
+            },
+            "description": "Additional parameters for the mandate, used by actions"
+        }
+    }
+}

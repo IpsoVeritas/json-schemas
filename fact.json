@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://developer.brickchain.com/schemas/fact.json",
+    "title": "Fact",
+    "description": "This is the Fact schema for Brickchain documents, see more at https://developer.brickchain.com/",
+    "type": "object",
+    "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
+    "properties": {
+        "data": {
+            "type": "object",
+            "description": "The fact itself, can be more than one fact of each type"
+        },
+        "iss": {
+            "type": "string",
+            "description": "The issuer of the fact (in plaintext)"
+        },
+        "label": {
+            "type": "string",
+            "description": "The issued id (i.e. user@example.com)"
+        },
+        "recipient": {
+            "type": "string",
+            "description": "The public JWK of the receipient of the fact"
+        },
+        "ttl": {
+            "type": "integer",
+            "description": "Seconds until expiration after the document was created (timestamp)"
+        }
+    },
+    "required": [
+        "data"
+    ]
+}

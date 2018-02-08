@@ -1,0 +1,56 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://developer.brickchain.com/schemas/controller-descriptor.json",
+    "title": "Controller Descriptor",
+    "description": "This is the Controller Descriptor schema for Brickchain documents, see more at https://developer.brickchain.com/",
+    "type": "object",
+    "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
+    "properties": {
+        "label": {
+            "type": "string",
+            "description": "The label of the Controller"
+        },
+        "actionsURI": {
+            "type": "string",
+            "format": "uri",
+            "description": "The URI of the Action"
+        },
+        "adminUI": {
+            "type": "string",
+            "description": "The Admin UI, inline or URI"
+        },
+        "bindURI": {
+            "type": "string",
+            "format": "uri",
+            "description": "The location of the binding URI, used by the Realm"
+        },
+        "key": {
+            "type": "object",
+            "description": "The public JWK of the Controller"
+        },
+        "keyPurposes": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            },
+            "description": "An array of keypurposes"
+        },
+        "requireSetup": {
+            "type": "boolean",
+            "description": "An indication that the Controller needs configuration"
+        },
+        "addBindingEndpoint": {
+            "type": "string",
+            "description": "TODO"
+        },
+        "icon": {
+            "type": "string",
+            "description": "An icon for the controller"
+        }
+    },
+    "required": [
+        "label",
+        "actionsURI",
+        "requireSetup"
+    ]
+}

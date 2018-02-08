@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://developer.brickchain.com/schemas/document-callback.json",
+    "title": "Document Callback",
+    "description": "This is the Document Callback schema... TODO.",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "ID of the document"
+        },
+        "type": {
+            "type": "string",
+            "description": "The document type"
+        },
+        "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp of when the document was created"
+        },
+        "operation": {
+            "type": "string",
+            "description": "TODO"
+        },
+        "linkId": {
+            "type": "string",
+            "description": "TODO"
+        },
+        "linkType": {
+            "type": "string",
+            "description": "TODO"
+        }
+    },
+    "required": [
+        "timestamp"
+    ]
+}

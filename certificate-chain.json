@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://developer.brickchain.com/schemas/certificate-chain.json",
+    "title": "Certificate Chain",
+    "description": "This is the Certificate Chain schema... TODO.",
+    "type": "object",
+    "properties": {
+        "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp of when the document was created"
+        },
+        "ttl": {
+            "type": "integer",
+            "description": "Seconds until expiration after the document was created (timestamp)"
+        },
+        "root": {
+            "type": "object",
+            "description": "The root key as JWK"
+        },
+        "subKey": {
+            "type": "object",
+            "description": "The subkey as JWK"
+        },
+        "documentTypes": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "description": "TODO"
+            },
+            "description": "TODO"
+        },
+        "keyLevel": {
+            "type": "integer",
+            "description": "TODO: The required key level"
+        }
+    },
+    "required": [
+        "timestamp"
+    ]
+}
