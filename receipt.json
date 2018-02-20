@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://developer.brickchain.com/schemas/controller-binding.json",
+    "$id": "https://developer.brickchain.com/schemas/receipt.json",
     "title": "Receipt",
     "description": "This is the Receipt schema for Brickchain documents, used for issuing receipts from services, see more at https://developer.brickchain.com/",
     "type": "object",
