@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://developer.brickchain.com/schemas/action.json",
+    "$id": "https://developer.brickchain.com/schemas/realm-descriptor.json",
     "title": "Realm Descriptor",
     "description": "This is the Realm Descriptor schema for Brickchain documents, see more at https://developer.brickchain.com/",
     "type": "object",
