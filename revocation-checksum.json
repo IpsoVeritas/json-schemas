@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/revocation-checksum.json",
     "title": "Revocation Checksum",
-    "description": "This is the Brickchain Revocation Checksum schema. This signed Checksum document is published as part of a Revocation.",
+    "description": "A signed Checksum document is published as part of a Revocation.",
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {

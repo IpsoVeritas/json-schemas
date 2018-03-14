@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/signature-request.json",
     "title": "Signature Request",
-    "description": "This is the Signature Request schema. The purpose is to request a user to sign a document.",
+    "description": "This Signature Request is used to request a user to sign a document.",
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {

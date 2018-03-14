@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/revocation-request.json",
     "title": "Revocation Request",
-    "description": "This is the Brickchain Revocation Request schema. This document is sent to a Revocation service to request a Revocation of a document signature.",
+    "description": "A Revocation Request is sent to a Revocation service to request a Revocation of a document signature.",
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {

@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/fact.json",
     "title": "Fact",
-    "description": "This is the Fact schema for Brickchain documents, see more at https://developer.brickchain.com/",
+    "description": "A Fact is a personal identifier, something that identifies an individual or a property defining a person. An Assertion in OAuth lingo, contains a claim such as an e-mail address, Facebook ID, or passport number. The Fact is signed by an issuer - a KYC service, and stored by the user in the App. There can also be self-signed facts. Facts may be shared when requested through a Scope Request, and is bundled with other document types, for example an Action.",
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {

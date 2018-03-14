@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/action.json",
     "title": "Action",
-    "description": "This is the Action schema for Brickchain documents. An Action document is what is sent to an Action endpoint. The Parameters can be inserted from an Action Descriptor or a web formed filled in by a user.",
+    "description": "The Action document is what is sent to an Action endpoint, to trigger a service or transaction. The Parameters can be inserted with data coming from an Action Descriptor or a web formed filled in by a user.",
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {

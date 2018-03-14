@@ -2,13 +2,13 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/mandate.json",
     "title": "Mandate",
-    "description": "This is the Mandate schema for Brickchain documents, see more at https://developer.brickchain.com/",
+    "description": "A Mandate enables an entity (user, service) to act in a certain Role in a service connected to a Realm. A Mandate is issued to a public key, and may only be used by that key.",
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {
         "role": {
             "type": "string",
-            "description": "The role for for mandate",
+            "description": "The name of the mandate",
             "examples": [ "admin@example.realm", "guest@example.realm", "9a751666-857e-4578-991f-a874e4488b59@example.com" ]
         },
         "label": {

@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/controller-descriptor.json",
     "title": "Controller Descriptor",
-    "description": "This is the Controller Descriptor schema for Brickchain documents, see more at https://developer.brickchain.com/",
+    "description": "A Controller Descriptor is published by a Controller with metadata about itself.",
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {

@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/scope-request.json",
     "title": "Scope Request",
-    "description": "This is the Brickchain Scope Request schema. A client will use the Scope Request to fill in missing scopes for using a service.",
+    "description": "A client will use the Scope Request to fill in missing Facts for using a service.",
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {

@@ -2,13 +2,13 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/revocation.json",
     "title": "Revocation",
-    "description": "This is the Brickchain Revocation schema. It is the document that is published as a revocation for a signature, and the content is a JWS containing a Revocation Checksum document.",
+    "description": "The Revocation document is published as a revocation of a signature, and the content is a JWS containing a Revocation Checksum document.",
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {
         "checksum": {
             "type": "object",
-            "description": "This object is a Brickchain Checksum document"
+            "description": "This object is a Brickchain Revocation Checksum document"
         }
     },
     "required": [

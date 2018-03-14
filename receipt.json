@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/receipt.json",
     "title": "Receipt",
-    "description": "This is the Receipt schema for Brickchain documents, used for issuing receipts from services, see more at https://developer.brickchain.com/",
+    "description": "A Receipt is a proof of a successful transaction with a service. May be used in the App for further interaction with the service.",
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {
