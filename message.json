@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/message.json",
     "title": "Message",
-    "description": "A message to be displayed to the user.",
+    "description": "The Message document is used to display a message in the app. Mostly used in multipart-messages, as part of a larger payload.",
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {
