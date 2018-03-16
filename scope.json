@@ -5,9 +5,20 @@
     "description": "a Scope is used as part of a Scope Request. Contains the type of scope, and a link of where to get it.",
     "type": "object",
     "properties": {
-        "name": { "type": "string", "description": "The name of the Scope" },
-        "link": { "type": "string", "format": "uri", "description": "An URI of where to retrieve a fact of this type of fact." },
-        "required": {"type": "boolean", "description": "This fact may be optional or required."}
+        "name": {
+            "type": "string",
+            "description": "The name of the Scope."
+        },
+        "link": {
+            "type": "string",
+            "format": "uri",
+            "description": "An URI of where to retrieve a fact of this type of fact."
+        },
+        "required":
+        {
+            "type": "boolean",
+            "description": "This fact may be optional or required."
+        }
     },
     "required": [
         "name"
