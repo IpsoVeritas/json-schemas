@@ -6,16 +6,12 @@
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {
-        "mandate": {
-            "type": "string",
-            "description": "One mandate used by the token"
-        },
         "mandates": {
             "type": "array",
             "items": {
                 "type": "string",
-                "description": "A Mandate used by the token"
-            },
+                "description": "Compact JWS encoded Mandate used by the token"
+              },
             "description": "Can be multiple mandates"
         },
         "uri": {
@@ -28,8 +24,8 @@
             "description": "Seconds until expiration after the document was created (timestamp)"
         }
     },
-    "oneOf": [
-        { "required": [ "mandate" ] },
-        { "required": [ "mandates"] }
+    "required": [
+      "mandates",
+      "ttl"
     ]
 }

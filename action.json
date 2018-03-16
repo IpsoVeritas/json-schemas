@@ -6,18 +6,17 @@
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {
-        "role": {
-            "type": "string",
-            "description": "The Role used for the Action",
-            "examples": [ "admin@example.com", "guest@example.com" ]
-        },
-        "mandate": {
-            "type": "string",
-            "description": "The Mandate used for the Action"
+        "mandates": {
+          "type": "array",
+          "items": {
+              "type": "string",
+              "description": "Compact JWS encoded Mandate used for the Action"
+          },
+          "description": "A list of Mandates used for the Action"
         },
         "nonce": {
             "type": "string",
-            "description": "The nonce used for the Action"
+            "description": "The nonce used for the Action to prevent replay attacks"
         },
         "params": {
             "type": "object",
@@ -32,16 +31,16 @@
             "type": "array",
             "items": {
                 "type": "string",
-                "description": "A fact"
+                "description": "Compact JWS encoded Fact used for the Action"
             },
             "description": "All shared facts needed to perform the Action"
         },
         "contract": {
-            "type": "object",
-            "description": "The message that was shown when the Action was signed"
+            "type": "string",
+            "description": "The signed Contract (compact encoded JWS) that was shown when the Action was signed"
         }
     },
     "required": [
-        "role"
+        "mandates"
     ]
 }

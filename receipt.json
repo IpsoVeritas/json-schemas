@@ -6,10 +6,6 @@
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {
-        "role": {
-            "type": "string",
-            "description": "The Role that executed the Action that formed the Receipt"
-        },
         "action": {
             "type": "string",
             "description": "The Action document that formed the Receipt"

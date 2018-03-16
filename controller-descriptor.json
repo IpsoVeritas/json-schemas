@@ -13,7 +13,7 @@
         "actionsURI": {
             "type": "string",
             "format": "uri",
-            "description": "The URI of the Action"
+            "description": "Used to retrieve Action Descriptors from controller."
         },
         "adminUI": {
             "type": "string",
@@ -26,14 +26,14 @@
         },
         "key": {
             "type": "object",
-            "description": "The public JWK of the Controller"
+            "description": "The controller's public key as JWK."
         },
         "keyPurposes": {
             "type": "array",
             "items": {
                 "type": "object"
             },
-            "description": "An array of keypurposes"
+            "description": "An array of keypurposes, describes document types for the controller's certificate"
         },
         "requireSetup": {
             "type": "boolean",
@@ -41,7 +41,7 @@
         },
         "addBindingEndpoint": {
             "type": "string",
-            "description": "TODO"
+            "description": "Can be used to create new empty bindings on the controller."
         },
         "icon": {
             "type": "string",
@@ -49,8 +49,7 @@
         }
     },
     "required": [
-        "label",
-        "actionsURI",
-        "requireSetup"
+        "key",
+        "bindURI"
     ]
 }

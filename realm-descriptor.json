@@ -2,13 +2,14 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/realm-descriptor.json",
     "title": "Realm Descriptor",
-    "description": "This is the Realm Descriptor schema for Brickchain documents, see more at https://developer.brickchain.com/",
+    "description": "This is the Realm Descriptor schema, includes all public metadata about a realm.",
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {
         "name": {
             "type": "string",
-            "description": "The name of the Realm"
+            "description": "The name of the Realm",
+            "format": "hostname"
         },
         "description": {
             "type": "string",
@@ -19,12 +20,8 @@
             "description": "The public JWK of the Realm"
         },
         "endpoints": {
-            "type": "array",
-            "items": {
-                "type": "string",
-                "format": "uri"
-            },
-            "description": "Versioned API endpoints for the Realm"
+            "type": "object",
+            "description": "Versioned API endpoints for the Realm, a map of URIs where version is the key."
         },
         "inviteURL": {
             "type": "string",
@@ -35,14 +32,6 @@
             "type": "string",
             "format": "uri",
             "description": "Location of where to find services published by the Realm"
-        },
-        "keyHistory": {
-            "type": "array",
-            "items": {
-                "type": "string",
-                "description": "A serialized JWK of a public key"
-            },
-            "description": "A list of historical keys used by the Realm"
         },
         "icon": {
             "type:": "string",

@@ -9,6 +9,26 @@
         "text": {
             "type": "string",
             "description": "A Contract message, displayed for the user for signing"
+        },
+        "attachments": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "The name of the attachment"
+                    },
+                    "data": {
+                      "type": "string",
+                      "description": "The attachment data"
+                    },
+                    "encoding": {
+                      "type": "string",
+                      "description": "MIME of the attachment"
+                    }
+                }
+            }
         }
     }
 }

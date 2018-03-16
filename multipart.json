@@ -6,33 +6,32 @@
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {
-        "title": {
-            "type": "string",
-            "description": "The message title"
-        },
         "parts": {
-            "type": "object",
-            "properties": {
-                "encoding": {
-                    "type": "string",
-                    "description": "The used encoding of the document part"
-                },
-                "name": {
-                    "type": "string",
-                    "description": "The name of the part"
-                },
-                "document": {
-                    "type": "string",
-                    "description": "The document itself"
-                },
-                "uri": {
-                    "type": "string",
-                    "format": "uri",
-                    "description": "TODO"
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "encoding": {
+                        "type": "string",
+                        "description": "The used encoding of the document part"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the part"
+                    },
+                    "document": {
+                        "type": "string",
+                        "description": "The document itself"
+                    },
+                    "uri": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "TODO"
+                    }
                 }
             },
             "description": "All parts of this multipart document"
-        }
+          }
     },
     "required": [
         "parts"

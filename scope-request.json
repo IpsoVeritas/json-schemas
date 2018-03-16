@@ -29,17 +29,9 @@
             },
             "description": "An array of Scope objects."
         },
-        "encryptTo": {
-            "type": "array",
-            "item": {
-                "type": "object",
-                "description": "A JWK with a public key."
-            },
-            "description": "encryptTo specifies what recipients to encrypt the response to."
-        },
         "keyLevel": {
             "type": "integer",
-            "description": "TODO: The required key level"
+            "description": "The minimum required key level that signs the response."
         },
         "contract": {
             "type": "object",
@@ -48,5 +40,6 @@
     },
     "required": [
         "replyTo",
-        "scopes"    ]
+        "scopes"
+    ]
 }
