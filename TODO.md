@@ -15,11 +15,11 @@ action-descriptor:
 removed binding
 removed uiData, can use uiURI as data uri
 removed all nonce fields, the action should contain a unique random string as a nonce
-scopes, should be linked to the new scope.json schema
+scopes, should be linked to the new scope.json schema (done)
 added refreshURI
 
-add scope.json schema! (in scope-request go code)
-add keypurpose.json schema! (in controller-descriptor go code)
+add scope.json schema! (done)
+add keypurpose.json schema! (in controller-descriptor go code) (done)
 
 certificate-chain has been changed into a new certificate
 
@@ -64,10 +64,10 @@ jwt: investigate, bad design when sharing receipts
 look at params
 
 scope-request:
-refer to scope document (and create scope schema)
+refer to scope document (done)
 refer to contract document
 removed encryptTo
 
 signature-request:
-removed documenta
+removed document
 added contract, TODO: refer to contract document
