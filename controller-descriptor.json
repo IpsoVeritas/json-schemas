@@ -29,9 +29,9 @@
             "description": "The controller's public key as JWK."
         },
         "keyPurposes": {
-            "type": "array",
+            "type": "array", 
             "items": {
-                "type": "object"
+                "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/keypurpose.json" } ]
             },
             "description": "An array of keypurposes, describes document types for the controller's certificate"
         },
