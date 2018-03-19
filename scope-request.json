@@ -17,15 +17,8 @@
         },
         "scopes": {
             "type": "array",
-            "item": {
-                "type": "object",
-                "properties": {
-                    "name": { "type": "string", "description": "The name of the Scope" },
-                    "link": { "type": "string", "format": "uri", "description": "An URI of where to retrieve a fact of this type of fact." },
-                    "required": {"type": "boolean", "description": "This fact may be optional or required."}
-                },
-                "description": "The Scope object contains the type of scope, and a link of where to get it.",
-                "required": "name"
+            "items": {
+                "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/scope.json" } ]
             },
             "description": "An array of Scope objects."
         },
