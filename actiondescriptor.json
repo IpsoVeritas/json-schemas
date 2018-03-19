@@ -47,8 +47,7 @@
         "scopes": {
           "type": "array",
           "items": {
-            "type": "object",
-            "description": "To be able to query for additional scopes when performing the Action"
+            "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/scope.json" } ]
           },
           "description": "A list of scope objects"
         },
