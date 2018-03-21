@@ -13,15 +13,15 @@
                 "properties": {
                     "encoding": {
                         "type": "string",
-                        "description": "The used encoding of the document part"
+                        "description": "The used encoding of the document part."
                     },
                     "name": {
                         "type": "string",
-                        "description": "The name of the part"
+                        "description": "The name of the part."
                     },
                     "document": {
                         "type": "string",
-                        "description": "The document itself"
+                        "description": "The document itself."
                     },
                     "uri": {
                         "type": "string",
@@ -30,7 +30,7 @@
                     }
                 }
             },
-            "description": "All parts of this multipart document"
+            "description": "All parts of this multipart document."
           }
     },
     "required": [

@@ -8,25 +8,25 @@
     "properties": {
         "realmDescriptor": {
             "type": "object",
-            "description": "The Realm Descriptor object"
+            "description": "The Realm Descriptor object."
         },
         "adminRoles": {
             "type": "array",
             "items": {
                 "type": "string",
-                "description": "An admin role"
+                "description": "An admin role."
             },
-            "description": "An array of admin roles that are allow to manage the Controller"
+            "description": "An array of admin roles that are allow to manage the Controller."
         },
         "controllerCertificate": {
             "type": "string",
-            "description": "A Controller Certificate given from the Realm"
+            "description": "A Controller Certificate given from the Realm."
         },
         "mandates": {
           "type": "array",
           "items": {
               "type": "string",
-              "description": "Compact JWS encoded Mandate"
+              "description": "Compact JWS encoded Mandate."
           },
           "description": "A list of Mandates that allows the controller to act as a certain role in the realm."
         }

@@ -8,16 +8,16 @@
     "properties": {
         "name": {
             "type": "string",
-            "description": "The name of the Realm",
+            "description": "The name of the Realm.",
             "format": "hostname"
         },
         "description": {
             "type": "string",
-            "description": "The description of the Realm"
+            "description": "The description of the Realm."
         },
         "publicKey": {
             "type": "object",
-            "description": "The public JWK of the Realm"
+            "description": "The public JWK of the Realm."
         },
         "endpoints": {
             "type": "object",
@@ -26,22 +26,22 @@
         "inviteURL": {
             "type": "string",
             "format": "uri",
-            "description": "The Invite URL for the Realm"
+            "description": "The Invite URL for the Realm."
         },
         "servicesURL": {
             "type": "string",
             "format": "uri",
-            "description": "Location of where to find services published by the Realm"
+            "description": "Location of where to find services published by the Realm."
         },
         "icon": {
             "type:": "string",
             "format": "uri",
-            "description": "The location of the icon used for displaying the Realm"
+            "description": "The location of the icon used for displaying the Realm."
         },
         "banner": {
             "type": "string",
             "format": "uri",
-            "description": "The location of the banner used for displaying the Realm"
+            "description": "The location of the banner used for displaying the Realm."
         }
     }
 }

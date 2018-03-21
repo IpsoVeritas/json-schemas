@@ -8,23 +8,23 @@
     "properties": {
         "role": {
             "type": "string",
-            "description": "The name of the mandate",
+            "description": "The name of the mandate.",
             "examples": [ "admin@example.realm", "guest@example.realm", "9a751666-857e-4578-991f-a874e4488b59@example.com" ]
         },
         "roleName": {
             "type": "string",
-            "description": "The human readable name for the mandate (the role)",
+            "description": "The human readable name for the mandate (the role).",
             "examples": [ "Admin", "Guest", "Employee"]
         },
         "validFrom": {
             "type": "string",
             "format": "date-time",
-            "description": "The date and time the Mandate is valid from"
+            "description": "The date and time the Mandate is valid from."
         },
         "validUntil": {
           "type": "string",
           "format": "date-time",
-          "description": "The date and time the Mandate is valid until"
+          "description": "The date and time the Mandate is valid until."
         },
         "recipient": {
             "type": "object",
@@ -32,12 +32,12 @@
         },
         "recipientName": {
             "type": "string",
-            "description": "The human readable name of the receipient of the mandate",
+            "description": "The human readable name of the receipient of the mandate.",
             "examples": [ "Person Name", "user@example.com" ]
         },
         "sender": {
             "type": "string",
-            "description": "The key id of the sender of the invite"
+            "description": "The key id of the sender of the invite."
         },
         "params": {
             "type": "object",
@@ -46,7 +46,7 @@
                     "type": "string"
                 }
             },
-            "description": "Additional parameters for the mandate, used by actions"
+            "description": "Additional parameters for the mandate, used by actions."
         }
     },
     "required": [

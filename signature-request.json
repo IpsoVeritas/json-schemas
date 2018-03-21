@@ -21,7 +21,7 @@
         },
         "keyLevel": {
             "type": "integer",
-            "description": "The minimum required key level"
+            "description": "The minimum required key level."
         }
     },
     "required": [

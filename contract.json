@@ -8,7 +8,7 @@
     "properties": {
         "text": {
             "type": "string",
-            "description": "A Contract message, displayed for the user for signing"
+            "description": "A Contract message, displayed for the user for signing."
         },
         "attachments": {
             "type": "array",
@@ -17,15 +17,15 @@
                 "properties": {
                     "name": {
                       "type": "string",
-                      "description": "The name of the attachment"
+                      "description": "The name of the attachment."
                     },
                     "data": {
                       "type": "string",
-                      "description": "The attachment data"
+                      "description": "The attachment data."
                     },
                     "encoding": {
                       "type": "string",
-                      "description": "MIME of the attachment"
+                      "description": "MIME type of the attachment."
                     }
                 }
             }

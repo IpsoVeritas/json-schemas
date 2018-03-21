@@ -2,13 +2,13 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/certificate.json",
     "title": "Certificate",
-    "description": "This is the Certificate Chain schema... TODO.",
+    "description": "This is the certificate schema that contains any signature from an issuer certifying that the current key is allowed to sign certain documents types. The base document can include the certificate as a proof.",
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {
         "ttl": {
             "type": "integer",
-            "description": "Seconds until expiration after the document was created (timestamp)"
+            "description": "Seconds until expiration after the document was created (timestamp)."
         },
         "issuer": {
             "type": "object",

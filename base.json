@@ -8,24 +8,24 @@
         "@type": {
           "type": "string",
           "format": "uri",
-          "description": "Document type as URI, subtype after '#'"
+          "description": "Document type as URI, subtype after '#'."
         },
         "@timestamp": {
             "type": "string",
             "format": "date-time",
-            "description": "Timestamp of when the document was created"
+            "description": "Timestamp of when the document was created."
         },
         "@id": {
             "type": "string",
-            "description": "A unique identifier of the document (uuid)"
+            "description": "A unique identifier of the document (uuid)."
         },
         "@certificate": {
             "type": "string",
-            "description": "The certificate chain that was used as proof of current signature"
+            "description": "The certificate chain that was used as proof of current signature."
         },
         "@realm": {
             "type": "string",
-            "description": "The name of the realm that issued this document",
+            "description": "The name of the realm that issued this document.",
             "format": "hostname"
         }
     },

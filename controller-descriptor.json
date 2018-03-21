@@ -8,7 +8,7 @@
     "properties": {
         "label": {
             "type": "string",
-            "description": "The label of the Controller"
+            "description": "The label of the Controller."
         },
         "actionsURI": {
             "type": "string",
@@ -17,12 +17,12 @@
         },
         "adminUI": {
             "type": "string",
-            "description": "The Admin UI, inline or URI"
+            "description": "The Admin UI, inline or URI."
         },
         "bindURI": {
             "type": "string",
             "format": "uri",
-            "description": "The location of the binding URI, used by the Realm"
+            "description": "The location of the binding URI, used by the Realm."
         },
         "key": {
             "type": "object",
@@ -33,11 +33,11 @@
             "items": {
                 "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/keypurpose.json" } ]
             },
-            "description": "An array of keypurposes, describes document types for the controller's certificate"
+            "description": "An array of keypurposes, describes document types for the controller's certificate."
         },
         "requireSetup": {
             "type": "boolean",
-            "description": "An indication that the Controller needs configuration"
+            "description": "An indication that the Controller needs configuration."
         },
         "addBindingEndpoint": {
             "type": "string",
@@ -45,7 +45,7 @@
         },
         "icon": {
             "type": "string",
-            "description": "An icon for the controller"
+            "description": "An icon for the controller."
         }
     },
     "required": [

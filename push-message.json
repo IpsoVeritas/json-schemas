@@ -7,11 +7,11 @@
     "properties": {
         "title": {
             "type": "string",
-            "description": "The message title"
+            "description": "The message title."
         },
         "message": {
             "type": "string",
-            "description": "The content of the message"
+            "description": "The content of the message."
         },
         "uri": {
             "type": "string",
