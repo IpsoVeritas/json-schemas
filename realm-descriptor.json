@@ -6,14 +6,10 @@
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {
-        "name": {
+        "label": {
             "type": "string",
-            "description": "The name of the Realm.",
-            "format": "hostname"
-        },
-        "description": {
-            "type": "string",
-            "description": "The description of the Realm."
+            "description": "The label of the Realm.",
+            "examples": ["The example realm"]
         },
         "publicKey": {
             "type": "object",

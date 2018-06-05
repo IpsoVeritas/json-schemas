@@ -56,6 +56,9 @@ push-message:
 consider moving to separate documentation of push messages
 
 realm-descriptor:
+removed name
+removed description
+added label
 removed keyHistory (this issue should be carefully reviewed later)
 
 receipt:
