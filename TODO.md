@@ -44,6 +44,7 @@ removed requestId
 removed ttl
 added validFrom
 added validUntil
+removed recipientName
 
 mandatetoken:
 removed mandate
@@ -60,6 +61,7 @@ removed name
 removed description
 added label
 removed keyHistory (this issue should be carefully reviewed later)
+removed endPoints (now resolved via public action descriptors)
 
 receipt:
 removed role
