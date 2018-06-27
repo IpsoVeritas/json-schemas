@@ -30,11 +30,6 @@
             "type": "object",
             "description": "The public JWK of the receipent of the Mandate."
         },
-        "recipientName": {
-            "type": "string",
-            "description": "The human readable name of the receipient of the mandate.",
-            "examples": [ "Person Name", "user@example.com" ]
-        },
         "sender": {
             "type": "string",
             "description": "The key id of the sender of the invite."
