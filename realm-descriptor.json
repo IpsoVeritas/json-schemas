@@ -15,10 +15,6 @@
             "type": "object",
             "description": "The public JWK of the Realm."
         },
-        "endpoints": {
-            "type": "object",
-            "description": "Versioned API endpoints for the Realm, a map of URIs where version is the key."
-        },
         "inviteURL": {
             "type": "string",
             "format": "uri",
