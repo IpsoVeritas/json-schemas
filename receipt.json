@@ -6,41 +6,37 @@
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {
-        "role": {
-            "type": "string",
-            "description": "The Role that executed the Action that formed the Receipt"
-        },
         "action": {
             "type": "string",
-            "description": "The Action document that formed the Receipt"
+            "description": "The Action document that formed the Receipt."
         },
         "uri": {
             "type": "string",
-            "description": "The URI for doing updates on the Receipt"
+            "description": "The URI for doing updates on the Receipt."
         },
         "jwt": {
             "type": "string",
-            "description": "A JWT to be used when doing updates on the Receipt"
+            "description": "A JWT to be used when doing updates on the Receipt."
         },
         "intervals": {
             "type": "array",
             "items": {
                 "type": "object",
-                "description": "An Interval, start and end time for i.e. an event or booking"
+                "description": "An Interval, start and end time for i.e. an event or booking."
             },
-            "description": "An array of Intervals, used for events or bookings"
+            "description": "An array of Intervals, used for events or bookings."
         },
         "label": {
             "type": "string",
-            "description": "The label describing the Receipt"
+            "description": "The label describing the Receipt."
         },
         "params": {
             "type": "array",
             "items": {
                 "type": "string",
-                "description": "TODO: perhaps remove this, an param used for the Action"
+                "description": "TODO: perhaps remove this, an param used for the Action."
             },
-            "description": "TODO: perhaps remove this, all extra params used for the Action"
+            "description": "TODO: perhaps remove this, all extra params used for the Action."
         }
     }
 }

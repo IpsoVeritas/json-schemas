@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://developer.brickchain.com/schemas/keypurpose.json",
+    "title": "Key Purpose",
+    "description": "The Key Purpose documents is a part of the Controller Descriptor schema, and desribes to the Realm what kind of Document Types is needed in the Certificate.",
+    "type": "object",
+    "properties": {
+        "documentType": {
+            "type": "string",
+            "description": "The document type needed in the certificate."
+        },
+        "required": {
+            "type": "boolean",
+            "description": "This document type may be optional or required."
+        },
+        "description": {
+            "type": "string",
+            "description": "The description of (the requirement of) the document type."
+        }
+    },
+    "required": [
+        "documentType"
+    ]
+}

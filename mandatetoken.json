@@ -2,34 +2,30 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/mandatetoken.json",
     "title": "Mandate Token",
-    "description": "This is the Mandate Token schema for Brickchain documents, see more at https://developer.brickchain.com/",
+    "description": "The Mandate Token is an encapsulated object containing Mandates. Used for inclusion in HTTP headers, when interacting with web views.",
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {
-        "mandate": {
-            "type": "string",
-            "description": "One mandate used by the token"
-        },
         "mandates": {
             "type": "array",
             "items": {
                 "type": "string",
-                "description": "A Mandate used by the token"
-            },
+                "description": "Compact JWS encoded Mandate used by the token."
+              },
             "description": "Can be multiple mandates"
         },
         "uri": {
             "type": "string",
             "format": "uri",
-            "description": "The endpoint the client talks to (typically a web view)"
+            "description": "The endpoint the client talks to (typically a web view)."
         },
         "ttl": {
             "type": "integer",
-            "description": "Seconds until expiration after the document was created (timestamp)"
+            "description": "Seconds until expiration after the document was created (timestamp)."
         }
     },
-    "oneOf": [
-        { "required": [ "mandate" ] },
-        { "required": [ "mandates"] }
+    "required": [
+      "mandates",
+      "ttl"
     ]
 }

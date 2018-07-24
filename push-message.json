@@ -2,16 +2,16 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/push-message.json",
     "title": "Push Message",
-    "description": "This is the Push Message schema for Brickchain documents. Used for pushing messages to the client.",
+    "description": "The Push Message document is used for pushing messages to the client using a push service.",
     "type": "object",
     "properties": {
         "title": {
             "type": "string",
-            "description": "The message title"
+            "description": "The message title."
         },
         "message": {
             "type": "string",
-            "description": "The content of the message"
+            "description": "The content of the message."
         },
         "uri": {
             "type": "string",

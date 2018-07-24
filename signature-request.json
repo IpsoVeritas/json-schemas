@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/signature-request.json",
     "title": "Signature Request",
-    "description": "This Signature Request is used to request a user to sign a document.",
+    "description": "This Signature Request is used to request a user to sign a contract.",
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {
@@ -15,17 +15,20 @@
             },
             "description": "A list of callback addresses of where to send a response."
         },
-        "document": {
-            "type": "string",
-            "description": "The document requested for signing."
+        "contract": {
+            "type": "object",
+            "description": "The contract requested for signing.",
+            "items": {
+                "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/contract.json" } ]
+            }
         },
         "keyLevel": {
             "type": "integer",
-            "description": "TODO: The required key level"
+            "description": "The minimum required key level."
         }
     },
     "required": [
         "replyTo",
-        "document"
+        "contract"
     ]
 }

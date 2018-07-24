@@ -2,32 +2,38 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://developer.brickchain.com/schemas/controller-binding.json",
     "title": "Controller Binding",
-    "description": "This is the Controller Binding schema for Brickchain documents used for binding a Realm with a Controller, see more at https://developer.brickchain.com/",
+    "description": "This is the Controller Binding schema for Brickchain documents used for binding a Realm with a Controller.",
     "type": "object",
     "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
     "properties": {
         "realmDescriptor": {
             "type": "object",
-            "description": "The Realm Descriptor object"
+            "description": "The Realm Descriptor object."
         },
         "adminRoles": {
             "type": "array",
             "items": {
                 "type": "string",
-                "description": "An admin role"
+                "description": "An admin role."
             },
-            "description": "An array of admin roles that are allow to manage the Controller"
+            "description": "An array of admin roles that are allow to manage the Controller."
         },
-        "controllerCertificateChain": {
+        "controllerCertificate": {
             "type": "string",
-            "description": "A Controller Certificate Chain given from the Realm"
+            "description": "A Controller Certificate given from the Realm."
         },
-        "mandate": {
-            "type": "string",
-            "description": "A new Mandate for the Controller issued by the Realm"
+        "mandates": {
+          "type": "array",
+          "items": {
+              "type": "string",
+              "description": "Compact JWS encoded Mandate."
+          },
+          "description": "A list of Mandates that allows the controller to act as a certain role in the realm."
         }
     },
     "required": [
-        "realmDescriptor"
+        "realmDescriptor",
+        "adminRoles",
+        "controllerCertificate"
     ]
 }

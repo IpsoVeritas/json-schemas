@@ -8,39 +8,31 @@
     "properties": {
         "role": {
             "type": "string",
-            "description": "The name of the mandate",
+            "description": "The name of the mandate.",
             "examples": [ "admin@example.realm", "guest@example.realm", "9a751666-857e-4578-991f-a874e4488b59@example.com" ]
         },
-        "label": {
+        "roleName": {
             "type": "string",
-            "description": "The human readable name for the mandate (the role)",
+            "description": "The human readable name for the mandate (the role).",
             "examples": [ "Admin", "Guest", "Employee"]
         },
-        "ttl": {
-            "type": "integer",
-            "description": "Seconds until expiration after the document was created (timestamp)"
+        "validFrom": {
+            "type": "string",
+            "format": "date-time",
+            "description": "The date and time the Mandate is valid from."
+        },
+        "validUntil": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The date and time the Mandate is valid until."
         },
         "recipient": {
-            "type": "string",
-            "description": "Identifier of the receipient of the mandate",
-            "examples": [ "user@example.com", "Person Name"]
-        },
-        "recipientName": {
-            "type": "string",
-            "description": "Name of the receipient of the mandate",
-            "examples": [ "Person Name"]
-        },
-        "recipientPublicKey": {
             "type": "object",
-            "description": "The public JWK of the recipient of the fact"
-        },
-        "requestId": {
-            "type": "string",
-            "description": "The id of the mandate request"
+            "description": "The public JWK of the receipent of the Mandate."
         },
         "sender": {
             "type": "string",
-            "description": "The id of the sender of the invite"
+            "description": "The key id of the sender of the invite."
         },
         "params": {
             "type": "object",
@@ -49,7 +41,11 @@
                     "type": "string"
                 }
             },
-            "description": "Additional parameters for the mandate, used by actions"
+            "description": "Additional parameters for the mandate, used by actions."
         }
-    }
+    },
+    "required": [
+      "role",
+      "recipient"
+  ]
 }

@@ -8,49 +8,48 @@
     "properties": {
         "label": {
             "type": "string",
-            "description": "The label of the Controller"
+            "description": "The label of the Controller."
         },
         "actionsURI": {
             "type": "string",
             "format": "uri",
-            "description": "The URI of the Action"
+            "description": "Used to retrieve Action Descriptors from controller."
         },
         "adminUI": {
             "type": "string",
-            "description": "The Admin UI, inline or URI"
+            "description": "The Admin UI, inline or URI."
         },
         "bindURI": {
             "type": "string",
             "format": "uri",
-            "description": "The location of the binding URI, used by the Realm"
+            "description": "The location of the binding URI, used by the Realm."
         },
         "key": {
             "type": "object",
-            "description": "The public JWK of the Controller"
+            "description": "The controller's public key as JWK."
         },
         "keyPurposes": {
-            "type": "array",
+            "type": "array", 
             "items": {
-                "type": "object"
+                "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/keypurpose.json" } ]
             },
-            "description": "An array of keypurposes"
+            "description": "An array of keypurposes, describes document types for the controller's certificate."
         },
         "requireSetup": {
             "type": "boolean",
-            "description": "An indication that the Controller needs configuration"
+            "description": "An indication that the Controller needs configuration."
         },
         "addBindingEndpoint": {
             "type": "string",
-            "description": "TODO"
+            "description": "Can be used to create new empty bindings on the controller."
         },
         "icon": {
             "type": "string",
-            "description": "An icon for the controller"
+            "description": "An icon for the controller."
         }
     },
     "required": [
-        "label",
-        "actionsURI",
-        "requireSetup"
+        "key",
+        "bindURI"
     ]
 }

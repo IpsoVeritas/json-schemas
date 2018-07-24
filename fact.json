@@ -8,26 +8,30 @@
     "properties": {
         "data": {
             "type": "object",
-            "description": "The fact itself, can be more than one fact of each type"
+            "description": "The fact itself, can be more than one fact of each type."
         },
-        "iss": {
+        "issuer": {
             "type": "string",
-            "description": "The issuer of the fact (in plaintext)"
+            "description": "The URI for the issuing Realm of the fact.",
+            "format": "uri"
         },
         "label": {
             "type": "string",
-            "description": "The issued id (i.e. user@example.com)"
+            "description": "The human readable label of the fact.",
+            "examples": [ "user@example.com", "John Smith", "+1 781 452 4077" ]
         },
         "recipient": {
             "type": "string",
-            "description": "The public JWK of the receipient of the fact"
+            "description": "The public JWK of the receipient of the fact."
         },
         "ttl": {
             "type": "integer",
-            "description": "Seconds until expiration after the document was created (timestamp)"
+            "description": "Seconds until expiration after the document was created (@timestamp)."
         }
     },
     "required": [
-        "data"
+        "data",
+        "label",
+        "recipient"
     ]
 }
