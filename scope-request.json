@@ -28,7 +28,10 @@
         },
         "contract": {
             "type": "object",
-            "description": "The Contract, a message to display to the user."
+            "description": "The Contract, a message to display to the user.",
+            "items": {
+                "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/contract.json" } ]
+            }
         }
     },
     "required": [
