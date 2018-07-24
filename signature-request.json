@@ -17,7 +17,10 @@
         },
         "contract": {
             "type": "object",
-            "description": "The contract requested for signing."
+            "description": "The contract requested for signing.",
+            "items": {
+                "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/contract.json" } ]
+            }
         },
         "keyLevel": {
             "type": "integer",
