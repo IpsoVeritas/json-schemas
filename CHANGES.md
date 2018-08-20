@@ -89,6 +89,7 @@ Added the keypurpose schema
 
 * Removed role
 * Removed action
+* Removed params (is included in the action, and can also be encoded in the uri)
 
 ### scope-request
 

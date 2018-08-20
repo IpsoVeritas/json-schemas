@@ -29,14 +29,6 @@
         "label": {
             "type": "string",
             "description": "The label describing the Receipt."
-        },
-        "params": {
-            "type": "array",
-            "items": {
-                "type": "string",
-                "description": "TODO: perhaps remove this, an param used for the Action."
-            },
-            "description": "TODO: perhaps remove this, all extra params used for the Action."
         }
     }
 }
