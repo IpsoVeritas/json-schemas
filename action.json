@@ -4,7 +4,7 @@
     "title": "Action",
     "description": "The Action document is what is sent to an Action endpoint, to trigger a service or transaction. The Parameters can be inserted with data coming from an Action Descriptor or a web formed filled in by a user.",
     "type": "object",
-    "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
+    "allOf": [ { "$ref": "https://schema.brickchain.com/v2/base.json" } ],
     "properties": {
         "mandates": {
           "type": "array",

@@ -4,7 +4,7 @@
     "title": "Controller Binding",
     "description": "This is the Controller Binding schema for Brickchain documents used for binding a Realm with a Controller.",
     "type": "object",
-    "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
+    "allOf": [ { "$ref": "https://schema.brickchain.com/v2/base.json" } ],
     "properties": {
         "realmDescriptor": {
             "type": "object",

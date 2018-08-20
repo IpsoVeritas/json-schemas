@@ -4,7 +4,7 @@
     "title": "Revocation Request",
     "description": "A Revocation Request is sent to a Revocation service to request a Revocation of a document signature.",
     "type": "object",
-    "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
+    "allOf": [ { "$ref": "https://schema.brickchain.com/v2/base.json" } ],
     "properties": {
         "jws": {
             "type": "object",

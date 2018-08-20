@@ -4,7 +4,7 @@
     "title": "Scope Request",
     "description": "A client will use the Scope Request to fill in missing Facts for using a service.",
     "type": "object",
-    "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
+    "allOf": [ { "$ref": "https://schema.brickchain.com/v2/base.json" } ],
     "properties": {
         "replyTo": {
             "type": "array",

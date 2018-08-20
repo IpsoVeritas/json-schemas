@@ -4,7 +4,7 @@
     "title": "Realm Descriptor",
     "description": "This is the Realm Descriptor schema, includes all public metadata about a realm.",
     "type": "object",
-    "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
+    "allOf": [ { "$ref": "https://schema.brickchain.com/v2/base.json" } ],
     "properties": {
         "label": {
             "type": "string",

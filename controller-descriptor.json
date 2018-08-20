@@ -4,7 +4,7 @@
     "title": "Controller Descriptor",
     "description": "A Controller Descriptor is published by a Controller with metadata about itself.",
     "type": "object",
-    "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
+    "allOf": [ { "$ref": "https://schema.brickchain.com/v2/base.json" } ],
     "properties": {
         "label": {
             "type": "string",

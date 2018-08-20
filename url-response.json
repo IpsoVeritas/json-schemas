@@ -4,7 +4,7 @@
     "title": "URL Response",
     "description": "This is the URL Response schema, used for sending the Integrity app an URL as a response.",
     "type": "object",
-    "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
+    "allOf": [ { "$ref": "https://schema.brickchain.com/v2/base.json" } ],
     "properties": {
         "url": {
             "type": "string",

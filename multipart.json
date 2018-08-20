@@ -4,7 +4,7 @@
     "title": "Multipart",
     "description": "This is the Multipart schema, used for embedding multiple document into one.",
     "type": "object",
-    "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/base.json" } ],
+    "allOf": [ { "$ref": "https://schema.brickchain.com/v2/base.json" } ],
     "properties": {
         "parts": {
             "type": "array",
