@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://developer.brickchain.com/schemas/revocation-checksum.json",
+    "$id": "https://schema.brickchain.com/v2/revocation-checksum.json",
     "title": "Revocation Checksum",
     "description": "A signed Checksum document is published as part of a Revocation.",
     "type": "object",

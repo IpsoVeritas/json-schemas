@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://developer.brickchain.com/schemas/url-response.json",
+    "$id": "https://schema.brickchain.com/v2/url-response.json",
     "title": "URL Response",
     "description": "This is the URL Response schema, used for sending the Integrity app an URL as a response.",
     "type": "object",

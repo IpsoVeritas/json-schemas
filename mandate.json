@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://developer.brickchain.com/schemas/mandate.json",
+    "$id": "https://schema.brickchain.com/v2/mandate.json",
     "title": "Mandate",
     "description": "A Mandate enables an entity (user, service) to act in a certain Role in a service connected to a Realm. A Mandate is issued to a public key, and may only be used by that key.",
     "type": "object",

@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://developer.brickchain.com/schemas/scope.json",
+    "$id": "https://schema.brickchain.com/v2/scope.json",
     "title": "Scope",
     "description": "A Scope is used as part of a Scope Request or an Action Descriptor. Contains the type of scope, and a link of where to get it. It does not include the Base document, and is not signed as a standalone object.",
     "type": "object",

@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://developer.brickchain.com/schemas/controller-binding.json",
+    "$id": "https://schema.brickchain.com/v2/controller-binding.json",
     "title": "Controller Binding",
     "description": "This is the Controller Binding schema for Brickchain documents used for binding a Realm with a Controller.",
     "type": "object",

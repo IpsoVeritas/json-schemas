@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://developer.brickchain.com/schemas/multipart.json",
+    "$id": "https://schema.brickchain.com/v2/multipart.json",
     "title": "Multipart",
     "description": "This is the Multipart schema, used for embedding multiple document into one.",
     "type": "object",

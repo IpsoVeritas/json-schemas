@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://developer.brickchain.com/schemas/actiondescriptor.json",
+    "$id": "https://schema.brickchain.com/v2/actiondescriptor.json",
     "title": "Action Descriptor",
     "description": "The Action Descriptor describes a specific type of Action. It is published by the Controller to the Realm, but could be broadcasted using any method. A list of Action Descriptors is shown in the App as a list of actions/services available from a Realm.",
     "type": "object",

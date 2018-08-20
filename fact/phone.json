@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://developer.brickchain.com/schemas/fact/phone.json",
+    "$id": "https://schema.brickchain.com/v2/fact/phone.json",
     "title": "Base",
     "description": "This is the schema for the phone fact type, having one attribute that contains a phone number.",
     "type": "object",
