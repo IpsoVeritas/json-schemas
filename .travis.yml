@@ -1,0 +1,10 @@
+before_script:
+  - pip install --user awscli
+
+script:
+    - aws s3 cp --recursive dist/ s3://brickchain-sites/schema.brickchain.com/${TRAVIS_BRANCH}/v2
+    - aws configure set preview.cloudfront true
+    - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION --paths "/v2/*"
+
+notifications:
+  email: false
