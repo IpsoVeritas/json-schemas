@@ -2,7 +2,7 @@ before_script:
   - pip install --user awscli
 
 script:
-    - aws s3 cp --recursive ./ s3://brickchain-sites/schema.brickchain.com/${TRAVIS_BRANCH}/v2
+    - aws s3 cp --exclude ".git" --exclude ".travis.yml" --recursive ./ s3://brickchain-sites/schema.brickchain.com/${TRAVIS_BRANCH}/v2
     - aws configure set preview.cloudfront true
     - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION --paths "/v2/*"
 
