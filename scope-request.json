@@ -18,7 +18,7 @@
         "scopes": {
             "type": "array",
             "items": {
-                "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/scope.json" } ]
+                "allOf": [ { "$ref": "https://schema.brickchain.com/v2/scope.json" } ]
             },
             "description": "An array of Scope objects."
         },
@@ -30,7 +30,7 @@
             "type": "object",
             "description": "The Contract, a message to display to the user.",
             "items": {
-                "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/contract.json" } ]
+                "allOf": [ { "$ref": "https://schema.brickchain.com/v2/contract.json" } ]
             }
         }
     },

@@ -47,7 +47,7 @@
         "scopes": {
           "type": "array",
           "items": {
-            "allOf": [ { "$ref": "https://developer.brickchain.com/schemas/scope.json" } ]
+            "allOf": [ { "$ref": "https://schema.brickchain.com/v2/scope.json" } ]
           },
           "description": "A list of scope objects, asking the user to share facts with the service controller when performing an Action."
         },
