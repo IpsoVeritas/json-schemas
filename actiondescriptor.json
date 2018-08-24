@@ -65,7 +65,7 @@
             "description": "An moption to not display this descriptor in listings."
         },
         "contract": {
-            "allOf": [ { "$ref": "https://schema.brickchain.com/v2/contract.json" } ]
+            "allOf": [ { "$ref": "https://schema.brickchain.com/v2/contract.json" } ],
             "description": "The message to display when signing the Action."
         }
     },
