@@ -8,7 +8,7 @@
     "properties": {
         "replyTo": {
             "type": "array",
-            "item": {
+            "items": {
                 "type": "string",
                 "format": "uri",
                 "description": "A callback address of where to send a response."
