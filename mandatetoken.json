@@ -12,7 +12,7 @@
                 "type": "string",
                 "description": "Compact JWS encoded Mandate used by the token."
               },
-            "description": "Can be multiple mandates"
+            "description": "Can be multiple mandates encoded as compact JWS"
         },
         "uri": {
             "type": "string",
