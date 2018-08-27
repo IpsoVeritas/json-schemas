@@ -22,11 +22,6 @@
                     "document": {
                         "type": "string",
                         "description": "The document itself."
-                    },
-                    "uri": {
-                        "type": "string",
-                        "format": "uri",
-                        "description": "TODO"
                     }
                 }
             },
