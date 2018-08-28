@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://schema.brickchain.com/v2/fact-signature.json",
+    "title": "Fact Signature",
+    "description": "A Fact Signature document is an attachment to a Fact that allows a Fact to have multiple signatures.",
+    "type": "object",
+    "properties": {
+        "certificate": {
+            "type": "string",
+            "description": "The certificate from the issuing realm."
+        },
+        "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "The date and time of the issued fact signature."
+        },
+        "expires": {
+            "type": "string",
+            "format": "date-time",
+            "description": "The date and time of when this fact signature expires."
+        },
+        "subject": {
+            "type": "object",
+            "description": "The subject the signature is issued for as a JWK"
+        },
+        "hash": {
+            "type": "string",
+            "description": "The checksum of the fact that this fact signature covers."
+        },
+        "metadata": {
+            "type": "object",
+            "properties": {
+                ".*": {
+                    "type": "string"
+                }
+            },
+            "description": "TODO"
+        }
+    },
+    "required": [
+        "subject",
+        "hash",
+        "timestamp"
+    ]
+}
