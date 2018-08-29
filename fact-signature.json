@@ -34,7 +34,7 @@
                     "type": "string"
                 }
             },
-            "description": "TODO"
+            "description": "Additional data that a KYC provider can set. Should not contain sensitive information."
         }
     },
     "required": [
