@@ -15,11 +15,6 @@
             "type": "object",
             "description": "The public JWK of the Realm."
         },
-        "inviteURL": {
-            "type": "string",
-            "format": "uri",
-            "description": "The Invite URL for the Realm."
-        },
         "servicesURL": {
             "type": "string",
             "format": "uri",

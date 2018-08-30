@@ -39,10 +39,6 @@
             "type": "boolean",
             "description": "An indication that the Controller needs configuration."
         },
-        "addBindingEndpoint": {
-            "type": "string",
-            "description": "Can be used to create new empty bindings on the controller."
-        },
         "icon": {
             "type": "string",
             "description": "An icon for the controller."
