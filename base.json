@@ -21,7 +21,15 @@
         },
         "@certificate": {
             "type": "string",
-            "description": "The certificate chain that was used as proof of current signature."
+            "description": "Soon deprecated: The certificate that was used as proof of current signature."
+        },
+        "@certificates": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "description": "One certificate that was used as proof of current signature."
+            },
+            "description": "Any certificate that was used as proof of current signature."
         },
         "@realm": {
             "type": "string",
