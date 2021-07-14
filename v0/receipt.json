@@ -1,10 +1,10 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://schema.brickchain.com/v2/receipt.json",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/receipt.json",
     "title": "Receipt",
     "description": "A Receipt is a proof of a successful transaction with a service. May be used in the App for further interaction with the service.",
     "type": "object",
-    "allOf": [ { "$ref": "https://schema.brickchain.com/v2/base.json" } ],
+    "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/base.json" } ],
     "properties": {
         "action": {
             "type": "string",

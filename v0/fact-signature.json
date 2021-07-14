@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://schema.brickchain.com/v2/fact-signature.json",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/fact-signature.json",
     "title": "Fact Signature",
     "description": "A Fact Signature document is an attachment to a Fact that allows a Fact to have multiple signatures.",
     "type": "object",

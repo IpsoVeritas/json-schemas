@@ -1,6 +1,7 @@
-Brickchain JSON Schemas
+IpsoVeritas JSON Schemas
 =======================
 
-This repository contains all the Brickchain document schemas. They are all published in the location of the respective schema $id URI.
+This repository contains all the IpsoVeritas document schemas. They are all published in the location of the respective schema $id URI.
 
-More information on the Brickchain platform is available on https://developer.brickchain.com.
+## Versions
+`/v0` contains https://IpsoVeritas.github.io/schemas/v0

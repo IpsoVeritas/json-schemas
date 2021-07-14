@@ -1,10 +1,10 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://schema.brickchain.com/v2/mandate.json",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/mandate.json",
     "title": "Mandate",
     "description": "A Mandate enables an entity (user, service) to act in a certain Role in a service connected to a Realm. A Mandate is issued to a public key, and may only be used by that key.",
     "type": "object",
-    "allOf": [ { "$ref": "https://schema.brickchain.com/v2/base.json" } ],
+    "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/base.json" } ],
     "properties": {
         "role": {
             "type": "string",

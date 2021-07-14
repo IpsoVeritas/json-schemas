@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://schema.brickchain.com/v2/base.json",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/base.json",
     "title": "Base",
     "description": "This is the Base schema for Brickchain documents. All Brickchain documents use this as its base, and includes all fields from the base document.",
     "type": "object",

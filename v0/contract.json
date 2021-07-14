@@ -1,10 +1,10 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://schema.brickchain.com/v2/contract.json",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/contract.json",
     "title": "Contract",
     "description": "The Contract document is a message displayed to the user when signing a document.",
     "type": "object",
-    "allOf": [ { "$ref": "https://schema.brickchain.com/v2/base.json" } ],
+    "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/base.json" } ],
     "properties": {
         "text": {
             "type": "string",

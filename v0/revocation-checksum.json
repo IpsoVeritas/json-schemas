@@ -1,10 +1,10 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://schema.brickchain.com/v2/revocation-checksum.json",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/revocation-checksum.json",
     "title": "Revocation Checksum",
     "description": "A signed Checksum document is published as part of a Revocation.",
     "type": "object",
-    "allOf": [ { "$ref": "https://schema.brickchain.com/v2/base.json" } ],
+    "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/base.json" } ],
     "properties": {
         "multihash": {
             "type": "string",

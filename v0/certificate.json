@@ -1,10 +1,10 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://schema.brickchain.com/v2/certificate.json",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/certificate.json",
     "title": "Certificate",
     "description": "This is the certificate schema that contains any signature from an issuer certifying that the current key is allowed to sign certain documents types. The base document can include the certificate as a proof.",
     "type": "object",
-    "allOf": [ { "$ref": "https://schema.brickchain.com/v2/base.json" } ],
+    "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/base.json" } ],
     "properties": {
         "ttl": {
             "type": "integer",

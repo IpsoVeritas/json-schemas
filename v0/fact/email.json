@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://schema.brickchain.com/v2/fact/email.json",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/fact/email.json",
     "title": "Base",
     "description": "This is the schema for the e-mail fact type, having one attribute that contains an e-mail address.",
     "type": "object",

@@ -1,10 +1,10 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://schema.brickchain.com/v2/revocation.json",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/revocation.json",
     "title": "Revocation",
     "description": "The Revocation document is published as a revocation of a signature, and the content is a JWS containing a Revocation Checksum document.",
     "type": "object",
-    "allOf": [ { "$ref": "https://schema.brickchain.com/v2/base.json" } ],
+    "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/base.json" } ],
     "properties": {
         "checksum": {
             "type": "object",
