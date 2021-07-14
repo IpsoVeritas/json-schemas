@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/action.json",
+    "title": "Action",
+    "description": "The Action document is what is sent to an Action endpoint, to trigger a service or transaction. The Parameters can be inserted with data coming from an Action Descriptor or a web formed filled in by a user.",
+    "type": "object",
+    "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/base.json" } ],
+    "properties": {
+        "mandates": {
+          "type": "array",
+          "items": {
+              "type": "string",
+              "description": "Compact JWS encoded Mandate used for the Action."
+          },
+          "description": "A list of Mandates used for the Action."
+        },
+        "nonce": {
+            "type": "string",
+            "description": "The nonce used for the Action to prevent replay attacks."
+        },
+        "params": {
+            "type": "object",
+            "properties": {
+                ".*": {
+                    "type": "string"
+                }
+            },
+            "description": "Additional parameters needed to perform the Action. It is up to the receiving controller to determine the use of the parameters."
+        },
+        "facts": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "description": "Compact JWS encoded Fact used for the Action"
+            },
+            "description": "All shared facts needed to perform the Action."
+        },
+        "contract": {
+            "type": "string",
+            "description": "The signed Contract (compact encoded JWS) that was shown when the Action was signed."
+        }
+    },
+    "required": [
+        "mandates"
+    ]
+}

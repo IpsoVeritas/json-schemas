@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/controller-binding.json",
+    "title": "Controller Binding",
+    "description": "This is the Controller Binding schema for Brickchain documents used for binding a Realm with a Controller.",
+    "type": "object",
+    "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/base.json" } ],
+    "properties": {
+        "realmDescriptor": {
+            "type": "object",
+            "description": "The Realm Descriptor object."
+        },
+        "adminRoles": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "description": "An admin role."
+            },
+            "description": "An array of admin roles that are allow to manage the Controller."
+        },
+        "controllerCertificate": {
+            "type": "string",
+            "description": "A Controller Certificate given from the Realm."
+        },
+        "mandates": {
+          "type": "array",
+          "items": {
+              "type": "string",
+              "description": "Compact JWS encoded Mandate."
+          },
+          "description": "A list of Mandates that allows the controller to act as a certain role in the realm."
+        }
+    },
+    "required": [
+        "realmDescriptor",
+        "adminRoles",
+        "controllerCertificate"
+    ]
+}

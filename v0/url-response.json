@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/url-response.json",
+    "title": "URL Response",
+    "description": "This is the URL Response schema, used for sending the Integrity app an URL as a response.",
+    "type": "object",
+    "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/base.json" } ],
+    "properties": {
+        "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "The URL."
+        }
+    },
+    "required": [
+        "url"
+    ]
+}

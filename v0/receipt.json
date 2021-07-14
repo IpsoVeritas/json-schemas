@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/receipt.json",
+    "title": "Receipt",
+    "description": "A Receipt is a proof of a successful transaction with a service. May be used in the App for further interaction with the service.",
+    "type": "object",
+    "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/base.json" } ],
+    "properties": {
+        "action": {
+            "type": "string",
+            "description": "The Action document that formed the Receipt."
+        },
+        "uri": {
+            "type": "string",
+            "description": "The URI for doing updates on the Receipt."
+        },
+        "jwt": {
+            "type": "string",
+            "description": "A JWT to be used when doing updates on the Receipt."
+        },
+        "intervals": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "description": "An Interval, start and end time for i.e. an event or booking."
+            },
+            "description": "An array of Intervals, used for events or bookings."
+        },
+        "label": {
+            "type": "string",
+            "description": "The label describing the Receipt."
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/mandatetoken.json",
+    "title": "Mandate Token",
+    "description": "The Mandate Token is an encapsulated object containing Mandates. Used for inclusion in HTTP headers, when interacting with web views.",
+    "type": "object",
+    "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/base.json" } ],
+    "properties": {
+        "mandates": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "description": "Compact JWS encoded Mandate used by the token."
+              },
+            "description": "Can be multiple mandates encoded as compact JWS"
+        },
+        "uri": {
+            "type": "string",
+            "format": "uri",
+            "description": "The endpoint the client talks to (typically a web view)."
+        },
+        "ttl": {
+            "type": "integer",
+            "description": "Seconds until expiration after the document was created (timestamp)."
+        }
+    },
+    "required": [
+      "mandates",
+      "ttl"
+    ]
+}

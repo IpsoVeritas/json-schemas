@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/multipart.json",
+    "title": "Multipart",
+    "description": "This is the Multipart schema, used for embedding multiple document into one.",
+    "type": "object",
+    "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/base.json" } ],
+    "properties": {
+        "parts": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "encoding": {
+                        "type": "string",
+                        "description": "The used encoding of the document part."
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the part."
+                    },
+                    "document": {
+                        "type": "string",
+                        "description": "The document itself."
+                    }
+                }
+            },
+            "description": "All parts of this multipart document."
+          }
+    },
+    "required": [
+        "parts"
+    ]
+}

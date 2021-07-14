@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/realm-descriptor.json",
+    "title": "Realm Descriptor",
+    "description": "This is the Realm Descriptor schema, includes all public metadata about a realm.",
+    "type": "object",
+    "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/base.json" } ],
+    "properties": {
+        "label": {
+            "type": "string",
+            "description": "The label of the Realm.",
+            "examples": ["The example realm"]
+        },
+        "publicKey": {
+            "type": "object",
+            "description": "The public JWK of the Realm."
+        },
+        "servicesURL": {
+            "type": "string",
+            "format": "uri",
+            "description": "Location of where to find services published by the Realm."
+        },
+        "icon": {
+            "type": "string",
+            "format": "uri",
+            "description": "The location of the icon used for displaying the Realm."
+        },
+        "banner": {
+            "type": "string",
+            "format": "uri",
+            "description": "The location of the banner used for displaying the Realm."
+        }
+    }
+}

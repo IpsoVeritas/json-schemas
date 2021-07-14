@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/controller-descriptor.json",
+    "title": "Controller Descriptor",
+    "description": "A Controller Descriptor is published by a Controller with metadata about itself.",
+    "type": "object",
+    "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/base.json" } ],
+    "properties": {
+        "label": {
+            "type": "string",
+            "description": "The label of the Controller."
+        },
+        "actionsURI": {
+            "type": "string",
+            "format": "uri",
+            "description": "Used to retrieve Action Descriptors from controller."
+        },
+        "adminUI": {
+            "type": "string",
+            "description": "The Admin UI, inline or URI."
+        },
+        "bindURI": {
+            "type": "string",
+            "format": "uri",
+            "description": "The location of the binding URI, used by the Realm."
+        },
+        "key": {
+            "type": "object",
+            "description": "The controller's public key as JWK."
+        },
+        "keyPurposes": {
+            "type": "array", 
+            "items": {
+                "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/keypurpose.json" } ]
+            },
+            "description": "An array of keypurposes, describes document types for the controller's certificate."
+        },
+        "requireSetup": {
+            "type": "boolean",
+            "description": "An indication that the Controller needs configuration."
+        },
+        "icon": {
+            "type": "string",
+            "description": "An icon for the controller."
+        }
+    },
+    "required": [
+        "key",
+        "bindURI"
+    ]
+}

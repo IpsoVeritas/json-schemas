@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/scope-request.json",
+    "title": "Scope Request",
+    "description": "A client will use the Scope Request to fill in missing Facts for using a service.",
+    "type": "object",
+    "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/base.json" } ],
+    "properties": {
+        "replyTo": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "format": "uri",
+                "description": "A callback address of where to send a response."
+            },
+            "description": "A list of callback addresses of where to send a response."
+        },
+        "scopes": {
+            "type": "array",
+            "items": {
+                "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/scope.json" } ]
+            },
+            "description": "An array of Scope objects."
+        },
+        "keyLevel": {
+            "type": "integer",
+            "description": "The minimum required key level that signs the response."
+        },
+        "contract": {
+            "type": "object",
+            "description": "The Contract, a message to display to the user.",
+            "items": {
+                "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/contract.json" } ]
+            }
+        }
+    },
+    "required": [
+        "replyTo",
+        "scopes"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/message.json",
+    "title": "Message",
+    "description": "The Message document is used to display a message in the app. Mostly used in multipart-messages, as part of a larger payload.",
+    "type": "object",
+    "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/base.json" } ],
+    "properties": {
+        "title": {
+            "type": "string",
+            "description": "The message title."
+        },
+        "message": {
+            "type": "string",
+            "description": "The content of the message."
+        }
+    }
+}

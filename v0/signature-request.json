@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://IpsoVeritas.github.io/schemas/v0/signature-request.json",
+    "title": "Signature Request",
+    "description": "This Signature Request is used to request a user to sign a contract.",
+    "type": "object",
+    "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/base.json" } ],
+    "properties": {
+        "replyTo": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "format": "uri",
+                "description": "A callback address of where to send a response."
+            },
+            "description": "A list of callback addresses of where to send a response."
+        },
+        "contract": {
+            "type": "object",
+            "description": "The contract requested for signing.",
+            "items": {
+                "allOf": [ { "$ref": "https://IpsoVeritas.github.io/schemas/v0/contract.json" } ]
+            }
+        },
+        "keyLevel": {
+            "type": "integer",
+            "description": "The minimum required key level."
+        }
+    },
+    "required": [
+        "replyTo",
+        "contract"
+    ]
+}
